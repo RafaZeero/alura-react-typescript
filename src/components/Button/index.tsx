@@ -1,9 +1,10 @@
+import styles from './Button.module.scss'
 
 export default function Button() {
   return (
-    <div>
-      <button>Botao</button>
 
-    </div>
+    <button className={styles.botao}>Botao</button>
+
+
   )
 }

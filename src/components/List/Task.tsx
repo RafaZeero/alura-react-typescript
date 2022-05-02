@@ -1,3 +1,4 @@
+import styles from './List.module.scss'
 
 interface TaskProps {
   taskName: string
@@ -7,7 +8,7 @@ interface TaskProps {
 export default function Task({ taskName, taskTime }: TaskProps) {
 
   return (
-    <li>
+    <li className={styles.item}>
       <h3>{taskName}</h3>
       <span>{taskTime}</span>
     </li>

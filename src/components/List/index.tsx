@@ -1,4 +1,5 @@
 import Task from "./Task"
+import styles from './List.module.scss'
 
 
 export default function List() {
@@ -13,13 +14,13 @@ export default function List() {
     tempo: '01:25:00'
   }]
   return (
-    <aside>
+    <aside className={styles.listaTarefas}>
       <h2>Estudos do dia</h2>
-      {tarefas.map((tarefa, idx) => (
-        <ul key={idx} >
-          <Task taskName={tarefa.tarefa} taskTime={tarefa.tempo} />
-        </ul>
-      ))}
+      <ul>
+        {tarefas.map((tarefa, idx) => (
+          <Task key={idx} taskName={tarefa.tarefa} taskTime={tarefa.tempo} />
+        ))}
+      </ul>
     </aside>
   )
 }
