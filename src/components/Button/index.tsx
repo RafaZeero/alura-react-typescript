@@ -1,9 +1,15 @@
 import styles from './Button.module.scss'
 
-export default function Button() {
+type ButtonProps = {
+  children: React.ReactNode
+}
+
+export default function Button({ children }: ButtonProps) {
   return (
 
-    <button className={styles.botao}>Botao</button>
+    <button className={styles.botao}>
+      {children}
+    </button>
 
 
   )

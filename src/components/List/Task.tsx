@@ -1,16 +1,16 @@
 import styles from './List.module.scss'
 
 interface TaskProps {
-  taskName: string
-  taskTime: string
+  tarefa: string
+  tempo: string
 }
 
-export default function Task({ taskName, taskTime }: TaskProps) {
+export default function Task({ tarefa, tempo }: TaskProps) {
 
   return (
     <li className={styles.item}>
-      <h3>{taskName}</h3>
-      <span>{taskTime}</span>
+      <h3>{tarefa}</h3>
+      <span>{tempo}</span>
     </li>
   )
 }

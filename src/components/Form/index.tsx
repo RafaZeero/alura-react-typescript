@@ -14,7 +14,7 @@ export default function Form() {
         <input type="time" step='1' name='tempo' id='tempo' max='01:30:000' required min='00:00:00' />
 
       </div>
-      <Button />
+      <Button>Adicionar</Button>
     </form>
   )
 }

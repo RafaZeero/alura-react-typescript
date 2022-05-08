@@ -18,7 +18,7 @@ export default function List() {
       <h2>Estudos do dia</h2>
       <ul>
         {tarefas.map((tarefa, idx) => (
-          <Task key={idx} taskName={tarefa.tarefa} taskTime={tarefa.tempo} />
+          <Task key={idx} {...tarefa} /> //DRY - Don't Repeat Yourself + SRP - Single Responsibility Principle
         ))}
       </ul>
     </aside>
