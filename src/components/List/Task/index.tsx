@@ -9,23 +9,24 @@ export default function Task({
   tarefa,
   tempo,
   selected,
-  completado,
+  completed,
   id,
   selectTask
 }: SingleTaskProps) {
 
   return (
     <li
-      className={`${styles.item} ${selected ? styles.itemSelecionado : ''}`}
-      onClick={() => selectTask({
+      className={`${styles.item} ${selected ? styles.itemSelecionado : ''} ${completed ? styles.itemCompletado : ''}`}
+      onClick={() => !completed && selectTask({
         tarefa,
         tempo,
         selected,
-        completado,
+        completed,
         id
       })}>
       <h3>{tarefa}</h3>
       <span>{tempo}</span>
+      {completed && <span className={styles.concluido} aria-label="Tarefa completada"></span>}
     </li>
   )
 }

@@ -2,6 +2,6 @@ export interface TaskProps {
   tarefa: string
   tempo: string
   selected: boolean,
-  completado: boolean,
+  completed: boolean,
   id: string
 }
