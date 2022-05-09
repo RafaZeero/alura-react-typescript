@@ -1,4 +1,4 @@
-import React, { FormEvent, SetStateAction, useState } from "react";
+import React from "react";
 import { TaskProps } from "../../types/Tasks";
 import Button from "../Button";
 import styles from './Form.module.scss'
@@ -21,7 +21,7 @@ export default class Formulario extends React.Component<{
         ...tarefasAntigas,
         {
           ...this.state,
-          selecionado: false,
+          selected: false,
           completado: false,
           id: uuidv4()
         }
