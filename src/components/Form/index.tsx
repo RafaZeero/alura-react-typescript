@@ -1,7 +1,9 @@
+import { useState } from "react";
 import Button from "../Button";
 import styles from './Form.module.scss'
 
 export default function Form() {
+  const [newTask, setNewTask] = useState([])
   return (
     <form className={styles.novaTarefa}>
       <div className={styles.inputContainer}>

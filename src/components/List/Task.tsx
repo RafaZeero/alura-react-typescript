@@ -1,6 +1,6 @@
 import styles from './List.module.scss'
 
-interface TaskProps {
+export interface TaskProps {
   tarefa: string
   tempo: string
 }
