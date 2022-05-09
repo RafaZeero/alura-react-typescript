@@ -1,9 +1,7 @@
+import { TaskProps } from '../../types/Tasks'
 import styles from './List.module.scss'
 
-export interface TaskProps {
-  tarefa: string
-  tempo: string
-}
+
 
 export default function Task({ tarefa, tempo }: TaskProps) {
 
